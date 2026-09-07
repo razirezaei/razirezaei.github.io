@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Photos — Razieh Rezaei." />
+  <title>Photos | Razieh Rezaei</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html">about</a>
+    <a class="active" href="photos.html">photos</a>
+    <a href="papers.html">papers</a>
+    <button class="theme-toggle" type="button" aria-label="Switch theme">🌙</button>
+  </nav>
+
+  <main>
+    <h1 class="page-title">photos</h1>
+    <p class="page-intro">A small collection of moments from research, conferences, travel, and life.</p>
+
+    <div class="gallery">
+      <figure class="gallery-card">
+        <img src="photo.png" alt="Razieh Rezaei" />
+        <figcaption>Photo 1 — edit this caption if you like.</figcaption>
+      </figure>
+      <figure class="gallery-card">
+        <img src="profile_img.png" alt="Razieh Rezaei" />
+        <figcaption>Photo 2 — edit this caption if you like.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Razieh Rezaei</footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
